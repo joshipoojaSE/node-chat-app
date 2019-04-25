@@ -10,55 +10,12 @@ html {
     font-size: 16px;
 }
 
-input {
-    font-size: 14px;
-}
-
 body {
     line-height: 1.4;
     color: #333333;
     font-family: Helvetica, Arial, sans-serif;
 }
-
-h1 {
-    margin-bottom: 16px;
-}
-
-label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #777;
-}
-
-input {
-    border: 1px solid #eeeeee;
-    padding: 12px;
-    outline: none;
-}
-
-button {
-    cursor: pointer;
-    padding: 12px;
-    background: #7C5CBF;
-    border: none;
-    color: white;
-    font-size: 16px;
-    transition: background .3s ease;
-}
-
-button:hover {
-    background: #6b47b8;
-}
-
-button:disabled {
-    cursor: default;
-    background: #7c5cbf94;
-}
-
-/* Join Page Styles */
-
-.centered-form {
+.center {
     background: #333744;
     width: 100vw;
     height: 100vh;   
@@ -73,28 +30,31 @@ button:disabled {
     padding: 24px;
     width: 250px;
 }
+.btn-warning {
+    color: #171616;
+    background-color: #FF8C00;
+}
 
-.centered-form button {
+/* .centered-form button {
     width: 100%;
 }
 
 .centered-form input {
     margin-bottom: 16px;
     width: 100%;
-}
+} */
 
 /* Chat Page Layout */
 
 .chat {
     display: flex;
+    flex-direction: column;
 }
 
 .chat__sidebar {
     min-height: 100vh;
     color: white;
     background: #333744;
-    /* width: 225px; */
-    /* overflow-y: scroll */
 }
 
 /* Chat styles */
@@ -110,6 +70,12 @@ button:disabled {
     flex-grow: 1;
     padding: 24px 24px 0 24px;
     overflow-y: scroll;
+}
+.list-group-item{
+    color: #FF8C00;
+}
+.well{
+    width: fit-content;
 }
 
 /* Message Styles */
@@ -135,35 +101,6 @@ button:disabled {
 
 /* Message Composition Styles */
 
-.compose {
-    display: flex;
-    flex-shrink: 0;
-    margin-top: 16px;
-    padding: 24px;
-}
-
-.compose form {
-    display: flex;
-    flex-grow: 1;
-    margin-right: 16px;
-}
-
-.compose_small form {
-    display: block;
-    margin-right: 16px;
-}
-
-.compose input {
-    border: 1px solid #eeeeee;
-    width: 100%;
-    padding: 12px;
-    margin: 0 16px 0 0;
-    flex-grow: 1;
-}
-
-.compose button {
-    font-size: 14px;
-}
 
 /* Chat Sidebar Styles */
 
